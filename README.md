@@ -1,0 +1,1 @@
+# [G検定](https://www.jdla.org/certificate/general/)受験用タイマー
