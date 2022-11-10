@@ -1,8 +1,10 @@
+# ライブラリのインポート
+import time
+import sys
+import winsound
+
 def count_timer(q, m, m_remain):
     """問題数をカウント"""
-    import time
-    import sys
-    import winsound
     # 試験時間-予備の時間（秒）
     s = (m*60)-(m_remain*60)
 
@@ -27,7 +29,7 @@ def count_timer(q, m, m_remain):
                 sys.stdout.write("\r%d" % s_count + "秒経過")
                 sys.stdout.flush()
             
-        print("\n" + "-"*5 + f"{q_count}問終了!" + "-"*5)
+        print("\n" + "-"*5 + f"{q_count}問／{q}問終了!" + "-"*5)
         
     print("="*5 + "試験終了" + "="*5)
 
